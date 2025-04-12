@@ -1,13 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="keywords" content="HTML, CSS, tailwind" />
+    <meta
+      name="description"
+      content="A demostration of my HTML and CSS skills, using tailwind"
+    />
+    <meta name="author" content="Tomasz Ostaszewski" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/assets/favicon/favicon-16x16.png"
+    />
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>Home Page</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body class="bg-red-100 min-h-screen dark:bg-black dark:text-amber-50">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About author</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <h1>Welcome to My Website!</h1>
+      <p>This is the home page.</p>
+      <section>
+        <h2>About Me</h2>
+        <p>
+          My name is Tomasz, and I am a software engineer with a passion for
+          creating beautiful and functional websites. I have been working in the
+          field for over a year, and I am currently focusing on HTML and CSS. I
+          am eager to learn more about web development and share my knowledge
+          with others.
+        </p>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>
+        2025 My Website, created by Tomasz Ostaszewski with &#128153; All rights
+        reserved.
+        <sup>&copy;</sup>
+      </p>
+    </footer>
   </body>
 </html>
