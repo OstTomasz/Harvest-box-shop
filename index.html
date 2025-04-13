@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <meta name="keywords" content="HTML, CSS, tailwind" />
     <meta
       name="description"
-      content="A demostration of my HTML and CSS skills, using tailwind"
+      content="A demostration of my HTML and CSS skills, using tailwindCSS"
     />
     <meta name="author" content="Tomasz Ostaszewski" />
 
@@ -28,35 +28,217 @@
       href="/assets/favicon/favicon-16x16.png"
     />
     <link href="./src/style.css" rel="stylesheet" />
-    <title>Home Page</title>
+    <title>Fresh Harvest Box</title>
   </head>
-  <body class="bg-primary text-text-primary">
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About author</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <body>
+    <header class="flex justify-between items-center p-4">
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4" aria-hidden="true">
+          <use href="./public/assets/svg/sprite-svg.svg#icon-logo"></use>
+        </svg>
+        <p>FRESH HARVEST BOX</p>
+      </div>
+      <svg class="w-6 h-6" aria-hidden="true">
+        <use href="./public/assets/svg/sprite-svg.svg#icon-modal"></use>
+      </svg>
     </header>
-    <hr />
-    <main>
-      <h1>Welcome to My Website!</h1>
-      <p>This is the home page.</p>
-      <section>
-        <h2>About Me</h2>
-        <p>
-          My name is Tomasz, and I am a software engineer with a passion for
-          creating beautiful and functional websites. I have been working in the
-          field for over a year, and I am currently focusing on HTML and CSS. I
-          am eager to learn more about web development and share my knowledge
-          with others.
+
+    <main class="bg-primary">
+      <section class="flex flex-col items-center justify-center">
+        <h1 class="text-4xl font-bold mb-4 uppercase">
+          fresh harvest box is your one-stop place for a delicious fruit basket
+        </h1>
+
+        <img
+          src="./public/assets/images/top-lady-mobile.png"
+          alt="Lady with orange smiling"
+        />
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">
+          SHOP NOW
+        </button>
+        <p class="text-lg mb-8">
+          Our expertly curated fruit baskets are made with the freshest, highest
+          quality fruits available. Whether you are looking for a healthy snack
+          or a gift for a loved one, Fresh Harvest Box has got you covered.
         </p>
+        <div>
+          <h2>Fruit</h2>
+          <img
+            src="./public/assets/images/watermelon-x1.png"
+            alt="watermelon"
+          />
+          <p class="uppercase">
+            Refreshing and juicy, watermelon is the perfect summer treat and a
+            great source of hydration
+          </p>
+        </div>
+        <ul class="grid-cols-2 grid gap-4 mt-4">
+          <li class="border-2 rounded-3xl px-4 py-2">
+            <p class="flex justify-center items-center">#ORGANIC</p>
+          </li>
+          <li class="border-2 rounded-3xl px-4 py-2">
+            <p class="flex justify-center items-center">#PRODUCTS</p>
+          </li>
+          <li class="border-2 rounded-3xl px-4 py-2">
+            <p class="flex justify-center items-center">#BASKET</p>
+          </li>
+          <li class="border-2 rounded-3xl px-4 py-2">
+            <p class="flex justify-center items-center">#FRUITS</p>
+          </li>
+        </ul>
+        <div>
+          <h2>Fruit</h2>
+          <img
+            src="./public/assets/images/strawberry-basket-x1.png"
+            alt="strawberry-basket"
+          />
+          <p class="uppercase">
+            Sweet and juicy, strawberries are packed with vitamin C and
+            antioxidants, making them a delicious and healthy snack
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="uppercase">
+          To order your fruit basket, simply follow these easy steps
+        </h2>
+        <p>
+          Our baskets are assembled with care and delivered straight to your
+          doorstep, so you can enjoy the taste of fresh fruit without ever
+          leaving your home. Whether you're looking for a healthy snack or a
+          thoughtful gift, our fruit baskets are the perfect choice.
+        </p>
+        <ul>
+          <li class="bg-background flex items-center rounded-2xl">
+            <h3 class="">First Step</h3>
+            <p>
+              Just choose the fruit you want to order by clicking on the
+              checkboxes next to it.
+            </p>
+          </li>
+          <li class="bg-background flex items-center rounded-2xl">
+            <h3 class="">Second Step</h3>
+            <p>Click on the basket and fill out the form.</p>
+          </li>
+          <li class="bg-background flex items-center rounded-2xl">
+            <h3 class="">Third Step</h3>
+            <p>Sit back and relax! Your fresh fruit basket will be delivered</p>
+          </li>
+        </ul>
+      </section>
+      <img
+        src="./public/assets/images/middle-fruits=x1.png"
+        alt="fruits closeup"
+      />
+      <section>
+        <h2>ORGANIC FRUITS</h2>
+        <p>
+          Our organic fruits are hand-picked from local farms and delivered
+          straight to your doorstep, ensuring that you get the freshest and most
+          nutritious produce possible. We offer a wide selection of organic
+          fruits grown without the use of harmful pesticides or chemicals.
+        </p>
+        <ul>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Strawberry</h3>
+            <p>Plant</p>
+            <img
+              src="./public/assets/images/strawberry-x1.png"
+              alt="strawberry"
+            />
+            <p>5$/kg</p>
+          </li>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Banana</h3>
+            <p>Plant</p>
+            <img src="./public/assets/images/banana-x1.png" alt="banana" />
+            <p>6$/kg</p>
+          </li>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Watermelon</h3>
+            <p>Plant</p>
+            <img
+              src="./public/assets/images/watermelon-x1.png"
+              alt="watermelon"
+            />
+            <p>4$/kg</p>
+          </li>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Lime</h3>
+            <p>Plant</p>
+            <img src="./public/assets/images/lime-x1.png" alt="lime" />
+            <p>5$/kg</p>
+          </li>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Apple</h3>
+            <p>Plant</p>
+            <img src="./public/assets/images/apple-x1.png" alt="apple" />
+            <p>3$/kg</p>
+          </li>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Peach</h3>
+            <p>Plant</p>
+            <img src="./public/assets/images/peach-x1.png" alt="peach" />
+            <p>8$/kg</p>
+          </li>
+        </ul>
+        <button class="bg-lime text-white px-4 py-2 rounded">ORDER</button>
+      </section>
+      <section>
+        <h2 class="uppercase">Fresh Harvest Box has got you covered</h2>
+        <img src="./public/assets/images/mellon-x1.png" alt="green mellon" />
       </section>
     </main>
-    <hr />
+
     <footer>
+      <img
+        src="./public/assets/images/bottom-lady-x1.png"
+        alt="Lady with bananas smiling"
+      />
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4" aria-hidden="true">
+          <use href="./public/assets/svg/sprite-svg.svg#icon-logo"></use>
+        </svg>
+        <p>FRESH HARVEST BOX</p>
+      </div>
+
+      <nav>
+        <ul class="flex gap-4">
+          <li>
+            <a href="#">How It Works</a>
+          </li>
+          <li>
+            <a href="#">Fruits</a>
+          </li>
+          <li>
+            <a href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="flex gap-2">
+        <li>
+          <svg class="w-3 h-3" aria-hidden="true">
+            <use href="./public/assets/svg/sprite-svg.svg#icon-facebook"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="w-3 h-3" aria-hidden="true">
+            <use href="./public/assets/svg/sprite-svg.svg#icon-instagram"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="w-3 h-3" aria-hidden="true">
+            <use href="./public/assets/svg/sprite-svg.svg#icon-youtube"></use>
+          </svg>
+        </li>
+      </ul>
+      <address>
+        <a href="tel:+380 (68) 443-94-26">+380 (68) 443-94-26</a><br />
+        1678 S. Pioneer Road <br />
+        Salt Lake City UT <br />
+        84104
+      </address>
       <p>
         2025 My Website, created by Tomasz Ostaszewski with &#128153; All rights
         reserved.
