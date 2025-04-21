@@ -31,16 +31,50 @@
     <title>Fresh Harvest Box</title>
   </head>
   <body>
-    <header class="flex justify-between items-center p-4">
-      <div class="flex items-center gap-2">
-        <svg class="w-4 h-4" aria-hidden="true">
-          <use href="./public/assets/svg/sprite-svg.svg#icon-logo"></use>
+    <header>
+      <div class="flex justify-between items-center p-4">
+        <a href="#" class="flex items-center gap-2">
+          <svg class="w-4 h-4" aria-hidden="true">
+            <use href="./assets/svg/sprite-svg.svg#icon-logo"></use>
+          </svg>
+          <p>FRESH HARVEST BOX</p>
+        </a>
+        <svg class="w-6 h-6" aria-hidden="true">
+          <use href="./assets/svg/sprite-svg.svg#icon-modal"></use>
         </svg>
-        <p>FRESH HARVEST BOX</p>
       </div>
-      <svg class="w-6 h-6" aria-hidden="true">
-        <use href="./public/assets/svg/sprite-svg.svg#icon-modal"></use>
-      </svg>
+
+      <div class="flex flex-col items-center gap-2 border-2">
+        <div class="flex justify-between items-center gap-2 w-full p-4">
+          <a href="#" class="flex items-center gap-2">
+            <svg class="w-4 h-4" aria-hidden="true">
+              <use href="./assets/svg/sprite-svg.svg#icon-logo"></use>
+            </svg>
+            <p>FRESH HARVEST BOX</p>
+          </a>
+          <span>x</span>
+        </div>
+        <nav>
+          <ul class="flex flex-col justify-center items-center gap-4">
+            <li>
+              <a href="#">How It Works</a>
+            </li>
+            <li>
+              <a href="#">Fruits</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="w-4 h-4" aria-hidden="true">
+                  <use href="./assets/svg/sprite-svg.svg#icon-shopping"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="bg-primary">
@@ -48,9 +82,21 @@
         <h1 class="text-4xl font-bold mb-4 uppercase">
           fresh harvest box is your one-stop place for a delicious fruit basket
         </h1>
+        <img
+          src="./assets/images/banana-x1.png"
+          alt="banana"
+          height="44"
+          width="66"
+        />
+        <img
+          src="./assets/images/strawberry-x1.png"
+          alt="strawberry"
+          height="44"
+          width="66"
+        />
 
         <img
-          src="./public/assets/images/top-lady-mobile.png"
+          src="./assets/images/top-lady-mobile.png"
           alt="Lady with orange smiling"
         />
         <button class="bg-blue-500 text-white px-4 py-2 rounded">
@@ -63,10 +109,7 @@
         </p>
         <div>
           <h2>Fruit</h2>
-          <img
-            src="./public/assets/images/watermelon-x1.png"
-            alt="watermelon"
-          />
+          <img src="./assets/images/watermelon-x1.png" alt="watermelon" />
           <p class="uppercase">
             Refreshing and juicy, watermelon is the perfect summer treat and a
             great source of hydration
@@ -89,7 +132,7 @@
         <div>
           <h2>Fruit</h2>
           <img
-            src="./public/assets/images/strawberry-basket-x1.png"
+            src="./assets/images/strawberry-basket-x1.png"
             alt="strawberry-basket"
           />
           <p class="uppercase">
@@ -126,10 +169,7 @@
           </li>
         </ul>
       </section>
-      <img
-        src="./public/assets/images/middle-fruits=x1.png"
-        alt="fruits closeup"
-      />
+      <img src="../assets/images/middle-fruits=x1.png" alt="fruits closeup" />
       <section>
         <h2>ORGANIC FRUITS</h2>
         <p>
@@ -143,7 +183,9 @@
             <h3>Strawberry</h3>
             <p>Plant</p>
             <img
-              src="./public/assets/images/strawberry-x1.png"
+              src="../assets/images/strawberry-x1.png"
+              height="251"
+              width="295"
               alt="strawberry"
             />
             <p>5$/kg</p>
@@ -151,14 +193,21 @@
           <li class="bg-background flex flex-col rounded-2xl">
             <h3>Banana</h3>
             <p>Plant</p>
-            <img src="./public/assets/images/banana-x1.png" alt="banana" />
+            <img
+              src="../assets/images/banana-x1.png"
+              height="251"
+              width="295"
+              alt="banana"
+            />
             <p>6$/kg</p>
           </li>
           <li class="bg-background flex flex-col rounded-2xl">
             <h3>Watermelon</h3>
             <p>Plant</p>
             <img
-              src="./public/assets/images/watermelon-x1.png"
+              src="../assets/images/watermelon-x1.png"
+              height="251"
+              width="295"
               alt="watermelon"
             />
             <p>4$/kg</p>
@@ -166,38 +215,182 @@
           <li class="bg-background flex flex-col rounded-2xl">
             <h3>Lime</h3>
             <p>Plant</p>
-            <img src="./public/assets/images/lime-x1.png" alt="lime" />
+            <img
+              src="../assets/images/lime-x1.png"
+              height="251"
+              width="295"
+              alt="lime"
+            />
             <p>5$/kg</p>
           </li>
           <li class="bg-background flex flex-col rounded-2xl">
             <h3>Apple</h3>
             <p>Plant</p>
-            <img src="./public/assets/images/apple-x1.png" alt="apple" />
+            <img
+              src="../assets/images/apple-x1.png"
+              height="251"
+              width="295"
+              alt="apple"
+            />
             <p>3$/kg</p>
           </li>
           <li class="bg-background flex flex-col rounded-2xl">
             <h3>Peach</h3>
             <p>Plant</p>
-            <img src="./public/assets/images/peach-x1.png" alt="peach" />
+            <img
+              src="../assets/images/peach-x1.png"
+              height="251"
+              width="295"
+              alt="peach"
+            />
             <p>8$/kg</p>
+          </li>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Plum</h3>
+            <p>Plant</p>
+            <img
+              src="../assets/images/plums-x1.png"
+              height="251"
+              width="295"
+              alt="plums"
+            />
+            <p>4$/kg</p>
+          </li>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Orange</h3>
+            <p>Plant</p>
+            <img
+              src="../assets/images/orange-x1.png"
+              height="251"
+              width="295"
+              alt="orange"
+            />
+            <p>6$/kg</p>
+          </li>
+          <li class="bg-background flex flex-col rounded-2xl">
+            <h3>Kiwi</h3>
+            <p>Plant</p>
+            <img
+              src="../assets/images/kiwi-x1.png"
+              height="251"
+              width="295"
+              alt="kiwi"
+            />
+            <p>9$/kg</p>
           </li>
         </ul>
         <button class="bg-lime text-white px-4 py-2 rounded">ORDER</button>
       </section>
+      <section class="border-2">
+        <div>
+          <h2>YOUR ORDER</h2>
+          <span>x</span>
+        </div>
+        <ul>
+          <li>
+            <h3>Strawberry basket</h3>
+            <p>Plant</p>
+            <img
+              src="../assets/images/strawberry-basket-x1.png"
+              height="95"
+              width="88"
+              alt="strawberry basket"
+            /><input type="checkbox" />
+          </li>
+          <li>
+            <h3>Apple basket</h3>
+            <p>Plant</p>
+            <img
+              src="../assets/images/apple-basket-x1.png"
+              height="95"
+              width="88"
+              alt="Apple basket"
+            /><input type="checkbox" />
+          </li>
+          <li>
+            <h3>Fruit basket</h3>
+            <p>Plant</p>
+            <img
+              src="../assets/images/fruit-basket-x1.png"
+              height="95"
+              width="88"
+              alt="Apple basket"
+            /><input type="checkbox" />
+          </li>
+        </ul>
+        <form class="border-2">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="card">Card</label>
+          <input type="number" id="card" name="card" required />
+          <label for="comment">Comment</label>
+          <input type="text" id="comment" name="comment" />
+          <button type="submit">Submit</button>
+        </form>
+        <img
+          src="../assets/images/popup-lady-x1.png"
+          alt="Smiling lady with banana"
+          height="464"
+          width="290"
+        />
+        <div class="border-2">
+          <p>x</p>
+          <img
+            src="../assets/images/raspberry-x1.png"
+            alt="Raspberries"
+            height="176"
+            width="207"
+          />
+          <h2>THANK YOU!</h2>
+          <p>
+            Thank you for your order! Our team is preparing your box with fresh,
+            delicious fruits and vegetables, and we'll deliver it straight to
+            your doorstep. We appreciate your business and look forward to
+            providing you with the best possible experience!
+          </p>
+        </div>
+      </section>
       <section>
         <h2 class="uppercase">Fresh Harvest Box has got you covered</h2>
-        <img src="./public/assets/images/mellon-x1.png" alt="green mellon" />
+        <img
+          src="../assets/images/mellon-x1.png"
+          alt="green mellon"
+          height="476"
+          width="335"
+        />
+        <img
+          src="../assets/images/blueberries-x1.png"
+          alt="blueberries"
+          height="476"
+          width="335"
+        />
+      </section>
+      <section>
+        <p>
+          Our boxes are packed with delicious, nutritious fruits and vegetables,
+          perfect for anyone looking to eat healthier or support local farmers.
+          Order your box today and start enjoying the best that nature has to
+          offer!
+        </p>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
 
     <footer>
       <img
-        src="./public/assets/images/bottom-lady-x1.png"
+        src="../assets/images/bottom-lady-x1.png"
         alt="Lady with bananas smiling"
       />
       <div class="flex items-center gap-2">
         <svg class="w-4 h-4" aria-hidden="true">
-          <use href="./public/assets/svg/sprite-svg.svg#icon-logo"></use>
+          <use href="../assets/svg/sprite-svg.svg#icon-logo"></use>
         </svg>
         <p>FRESH HARVEST BOX</p>
       </div>
@@ -219,17 +412,17 @@
       <ul class="flex gap-2">
         <li>
           <svg class="w-3 h-3" aria-hidden="true">
-            <use href="./public/assets/svg/sprite-svg.svg#icon-facebook"></use>
+            <use href="../assets/svg/sprite-svg.svg#icon-facebook"></use>
           </svg>
         </li>
         <li>
           <svg class="w-3 h-3" aria-hidden="true">
-            <use href="./public/assets/svg/sprite-svg.svg#icon-instagram"></use>
+            <use href="../assets/svg/sprite-svg.svg#icon-instagram"></use>
           </svg>
         </li>
         <li>
           <svg class="w-3 h-3" aria-hidden="true">
-            <use href="./public/assets/svg/sprite-svg.svg#icon-youtube"></use>
+            <use href="../assets/svg/sprite-svg.svg#icon-youtube"></use>
           </svg>
         </li>
       </ul>
